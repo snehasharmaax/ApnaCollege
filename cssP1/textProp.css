@@ -1,0 +1,19 @@
+h1 {
+  text-align: right; /*left, center, justify */
+  /* border: solid; */
+  width: 50%;
+  font-family: arial;
+  text-decoration: wavy rgb(71, 29, 29) underline;
+}
+p {
+  text-align: justify;
+  font-weight: normal;
+  line-height: 2;
+  letter-spacing: 1.5px;
+  font-size: 19px;
+}
+h4 {
+  font-weight: 100;
+  text-decoration: double green overline;
+  font-family: impact;
+}
