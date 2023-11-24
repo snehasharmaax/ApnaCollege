@@ -68,3 +68,19 @@ input[type="radio"]:checked + label {
   color: red;
   font-weight: bold;
 }
+
+div:nth-of-type(2n) {
+  background-color: aquamarine;
+}
+
+h1::first-letter {
+  color: blueviolet;
+}
+
+p::first-line {
+  color: brown;
+}
+
+p::selection {
+  background-color: aqua;
+}
