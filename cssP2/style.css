@@ -39,3 +39,32 @@ p + h3 {
 div > input {
   background-color: darksalmon;
 }
+
+input[type="text"] {
+  color: red;
+}
+input[type="password"] {
+  color: aqua;
+}
+
+/* Psuedo CLass */
+button:hover {
+  background-color: black;
+  color: white;
+}
+h3:hover {
+  text-decoration: none;
+}
+
+button:active {
+  background-color: darkmagenta;
+}
+p:active {
+  font-weight: bold;
+  color: green;
+}
+
+input[type="radio"]:checked + label {
+  color: red;
+  font-weight: bold;
+}
