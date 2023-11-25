@@ -1,3 +1,29 @@
 div {
   height: 200px;
+  width: 300px;
+  background-color: grey;
+  margin: 15px;
+  /* border-style: solid;
+  border-color: red;
+  border-bottom: 5px dashed blue; */
+  border: 5px solid black;
+  /* border-top-right-radius: 50px; */
+  border-radius: 30px;
+  padding-top: 30px;
+  padding: 30px;
+}
+
+h1 {
+  border: 2px dashed rgb(87, 202, 156);
+  border-left-width: 12px;
+  border-left-style: double;
+  border-left-color: brown;
+}
+
+button {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background-color: rgb(152, 241, 241);
+  font-size: larger;
 }

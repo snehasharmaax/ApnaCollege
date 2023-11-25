@@ -9,12 +9,172 @@
     <h1>Box Model in CSS</h1>
     <ul>
       <li>
-        Height :- By ddefault, it sets the content area height of thw element.
+        Height :- By default, it sets the content area height of thw element.
       </li>
       <li>Width</li>
-      <li>Border</li>
-      <li>Padding</li>
-      <li>Margin</li>
+      <li>
+        Border:- Used to set an element border.
+        <ul>
+          <li>border(shorthand)</li>
+          <li>border-width</li>
+          <li>border-style</li>
+          <li>border-color</li>
+        </ul>
+        <ol>
+          <li>Border-Sides:- To controls an individual side of the box.</li>
+          <ul>
+            <li>border-left</li>
+            <li>border-right</li>
+            <li>border-top</li>
+            <li>border-bottom</li>
+            <li>border-top-right-radius</li>
+            <li>border-top-left-radius</li>
+            <li>border-bottom-right-radius</li>
+            <li>border-bottom-left-radius</li>
+          </ul>
+          <li>
+            Border-Radius:- Used to round the corners of an elements outer
+            border edge.
+          </li>
+        </ol>
+      </li>
+      <li>
+        Padding :- To set the spacing on the inside of border.
+        <ul>
+          <li>
+            padding(shorthand):-
+            <ol type="a">
+              <li>for all sides:- (padding: 50px)</li>
+              <li>top & bottom | left & right :- (padding : 1px 2px)</li>
+              <li>top | left & right | bottom :- (padding : 1px 2px 3px)</li>
+              <li>
+                (clockwise) top | right | bottom | left (padding : 1px 2px 3px
+                4px)
+              </li>
+            </ol>
+          </li>
+          <li>padding-left</li>
+          <li>padding-right</li>
+          <li>padding-top</li>
+          <li>padding-bottom</li>
+        </ul>
+      </li>
+      <li>
+        Margin :- To set the spacing on the outside of border.
+        <ul>
+          <li>
+            margin(shorthand):-
+            <ol type="a">
+              <li>for all sides:- (margin: 50px)</li>
+              <li>top & bottom | left & right :- (margin : 1px 2px)</li>
+              <li>top | left & right | bottom :- (margin : 1px 2px 3px)</li>
+              <li>
+                (clockwise) top | right | bottom | left (margin : 1px 2px 3px
+                4px)
+              </li>
+            </ol>
+          </li>
+          <li>margin-left</li>
+          <li>margin-right</li>
+          <li>margin-top</li>
+          <li>margin-bottom</li>
+        </ul>
+      </li>
     </ul>
+
+    <h1>Inline / Block</h1>
+    <ul>
+      <h2>1. display</h2>
+      <li>
+        <h3>
+          Block Elements :- Takes up the full-width available(whole block).
+        </h3>
+      </li>
+      <li>
+        <h3>Inline Elements :- Takes up only necessary width.</h3>
+      </li>
+    </ul>
+
+    <table border="black">
+      <tr>
+        <th>Block</th>
+        <th>Inline</th>
+      </tr>
+      <tr>
+        <td>Always start on a new line.</td>
+        <td>Do not start on a new line.</td>
+      </tr>
+      <tr>
+        <td>
+          Take up as much horizontal space as possible (the full width of the
+          container or browser window if there is no container)
+        </td>
+        <td>
+          Only use as much horizontal space as required by the content. do not
+          accept width and height CSS properties.
+        </td>
+      </tr>
+      <tr>
+        <td>Will respect width and height CSS properties.</td>
+        <td>Margins will work horizontally, but not vertically.</td>
+      </tr>
+      <tr>
+        <td>Horizontal and vertical margins both work</td>
+        <td>
+          Padding works on all sides, but the top and bottom may overlap other
+          elements.
+        </td>
+      </tr>
+    </table>
+
+    <table border="black">
+      <caption>
+        <u><b>Units in CSS</b></u>
+      </caption>
+      <tr>
+        <th>Unit</th>
+        <th>Relative to</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td>%</td>
+        <td>
+          It is often used to define a size as relative to an elements parent
+          object.
+        </td>
+        <td>
+          <ul>
+            Eg:-
+            <li>width : 33.33% // relaive to the parent.</li>
+            <li>margin-left : 50% // relative to the parent size.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>em (element)</td>
+        <td>
+          <ul>
+            <li>
+              Font size of the parent, in the case of typographical properties
+              like <b>font-size</b>, and font size of the element itself, in the
+              case of other properties like <b>width.</b>
+            </li>
+            <li><b>Drawback of Em:- </b> Snowfall effect in nested elements</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>parent / self</li>
+            <li>font-size: 1.5em;</li>
+            <li>padding: 1em;</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>rem (root-em)</td>
+        <td>Font size of the element.</td>
+        <td>Root element</td>
+      </tr>
+    </table>
   </body>
 </html>
