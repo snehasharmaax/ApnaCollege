@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Part 6</title>
+  </head>
+  <body>
+    <h1>CSS Grid</h1>
+    <p>
+      Setting a container's display to grid will make all children grid items.
+      <br />
+      Eg. container{ display: grid}
+    </p>
+    <h1>Grid Template</h1>
+    <p>
+      They define the lines & track sizing. <br />
+      Eg. grid-template-rows: 50px 50px 50px 50px 50px; <br />
+      grid-template-columns: 200px 200px 200px;
+    </p>
+
+    <h1>Grid Template (Repeat)</h1>
+    <p>
+      Repeat is used to divide all available space . <br />
+      grid-template-rows: repeat(count, 1fr); <br />
+      grid-template-columns: repeat(count, 1fr) <br /><br />
+      Eg. grid-template-rows: repeat(2, 1r) <br />
+      grid-template-rows: 1fr 1fr <br />
+      1fr = 1 fraction of 100% width
+    </p>
+
+    <h1>Grid Gaps</h1>
+    <p>
+      They define the gaps between the lines. <br />
+      row-gap: 10px <br />
+      column-gap: 10px <br />
+      grid-gap : rowGap columnGap
+    </p>
+
+    <h1>Grid Columns</h1>
+    <p>
+      Defines the item's starting & ending posiiton inside the column. <br />
+      grid-column-start: line-number <br />
+      grid-column-end: line-number <br />
+      grid-column: start-col/ end-col <br />
+      grid-column: start-col/span-number <br />
+    </p>
+
+    <h1>Grid Rows</h1>
+    <p>
+      Defines the item's starting & ending posiiton inside the row. <br />
+      grid-row-start: line-number <br />
+      grid-row-end: line-number <br />
+      grid-row: start-row/ end-row <br />
+      grid-row: start-row/span-number <br />
+    </p>
+
+    <h1>CSS Animations</h1>
+    <p>
+      To animate CSS elements <br />
+      Syntax:- @keyframe myName{ from {font-size: 20px} (initial) <br />
+      to {font-size: 40px} (final) }
+    </p>
+    <ul>
+      <li>animation-name</li>
+      <li>animation-duration</li>
+      <li>animation-timing-function</li>
+      <li>animation-delay</li>
+      <li>animation-iteration-count</li>
+      <li>animation-direction</li>
+    </ul>
+
+    <h1>% in Animation</h1>
+    <p>
+      Syntax :- @keyframes myName{ <br />
+      0%{font-size:20px} <br />
+      50%{font-size:30px} <br />
+      100%{font-size:40px} <br />
+      }
+    </p>
+
+    <h1>Media Queries</h1>
+    <p>
+      Help create a responsive website. <br />
+      media features - width (of viewport) <br />
+      Eg. @media(width: 400px){ <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;div{ <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-color: red; <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;} <br />
+      } <br />
+    </p>
+  </body>
+</html>
