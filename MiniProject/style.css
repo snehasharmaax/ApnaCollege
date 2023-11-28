@@ -92,7 +92,7 @@ a {
   /* cursor: pointer; */
   font-size: 40px;
 }
-.btn_two:hover i {
+/* .btn_two:hover i {
   font-size: 30px;
 }
 .sidebar_menu .social_media i:hover {
@@ -107,4 +107,4 @@ a {
 }
 #check:checked ~ .sidebar_menu .btn_two i {
   opacity: 1;
-}
+} */
