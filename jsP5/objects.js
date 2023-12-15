@@ -69,9 +69,21 @@ const classInfo = [
     city: "Aligarh",
   },
 ];
-console.log(classInfo[1]);
-console.log(classInfo[1].name);
-console.log(classInfo[1].grade);
-console.log(classInfo[1].city);
-classInfo[1].name = "Sakshi";
-console.log(classInfo);
+// console.log(classInfo[1]);
+// console.log(classInfo[1].name);
+// console.log(classInfo[1].grade);
+// console.log(classInfo[1].city);
+// classInfo[1].name = "Sakshi";
+// console.log(classInfo);
+
+// Random Integers
+// let step1 = Math.random();
+// console.log(step1);
+
+// let step2 = step1 * 100;
+// console.log(step2);
+
+// let step3 = Math.floor(step2);
+// console.log(step3);
+
+let random = Math.floor(Math.random() * 10) + 1;
