@@ -24,9 +24,48 @@
 
 // Practice Question 4
 // Create a function that prints the multiplication table of a number.
-function mulTab(n) {
-  for (let i = n; i <= n * 10; i += n) {
-    console.log(i);
+// function mulTab(n) {
+//   for (let i = n; i <= n * 10; i += n) {
+//     console.log(i);
+//   }
+// }
+// mulTab(2);
+
+// Practice Question 5
+// Create a Function that returns the sum of numbers from 1 to n
+// function getSum(n) {
+//   let sum = 0;
+//   for (let i = 1; i <= n; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// }
+// console.log(getSum(30));
+
+// Practice Question 6
+// Create a Function that returns the concatenation of all strings in an array.
+// let str = ["hi", "hello", "bye", "!"];
+// function concat(str) {
+//   let result = "";
+//   for (let i = 0; i < str.length; i++) {
+//     result += str[i];
+//   }
+//   return result;
+// }
+// console.log(concat(str));
+
+// Practice Question 7
+// What will be the output?
+let greet = "hello"; //global scope
+
+function changeGreet() {
+  let greet = "namaste"; //function scope
+  // console.log(greet);
+
+  function innerGreet() {
+    console.log(greet); // lexical scope
   }
+  innerGreet();
 }
-mulTab(2);
+console.log(greet);
+changeGreet();
