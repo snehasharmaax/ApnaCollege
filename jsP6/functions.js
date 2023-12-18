@@ -29,4 +29,21 @@ function isAdult() {
 function printInfo(name, age) {
   console.log(`${name}'s age is ${age}.`);
 }
-printInfo("Sneha", 21);
+// printInfo("Sneha", 21);
+
+// return keyword
+function sum(a, b) {
+  console.log("Hello");
+  return a + b;
+  console.log("Hello2");
+  console.log("Hello2");
+}
+console.log(sum(4, 5));
+
+function isAdult(age) {
+  if (age >= 18) {
+    return "adult";
+  } else {
+    return "not adult";
+  }
+}
